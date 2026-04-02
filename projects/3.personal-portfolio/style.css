@@ -1,0 +1,310 @@
+:root {
+    /* Colors */
+    --border-color: #d2d2d2;
+    --heading-color: #1a1a1a;
+    --text-color: #333;
+    --link-color: #007acc;
+    --hover-bg-color: #f9f9f9;
+    --muted-color: #999999;
+    --bg-color: #fff;
+
+    /* Spacing Scale */
+    --gap-xs: 8px;
+    --gap-sm: 16px;
+    --gap-md: 24px; /* Default "Auto Layout" */
+    --gap-lg: 48px; /* Space between smaller sections */
+    --gap-xl: 88px; /* Space for large sections */
+    --gap-hero: 144px;
+
+    /* Typography */
+    --main-font: "Inter", sans-serif;
+}
+
+/* 1. RESET & BASE STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--main-font);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* 2. GLOBAL TYPOGRAPHY */
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+    font-weight: 700;
+    color: var(--heading-color);
+}
+
+h1 {
+    font-size: 3.5rem;
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.25rem;
+}
+p {
+    font-size: 1rem;
+}
+p strong {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* 3. LAYOUT CONTAINERS */
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 var(--gap-md);
+    width: 100%;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+}
+
+/* 4. NAVBAR */
+nav.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+}
+
+nav ul {
+    display: flex;
+    gap: var(--gap-md);
+}
+
+nav ul li a {
+    font-weight: 600;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+nav ul li a:hover {
+    opacity: 1;
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* 5. HERO SECTION */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: var(--gap-hero) var(--gap-md);
+    gap: var(--gap-sm);
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* 6. PROJECT CARDS */
+.project {
+    display: flex;
+    flex-direction: column;
+    padding-top: var(--gap-lg);
+    gap: var(--gap-md);
+    border-right: 1px solid var(--border-color);
+}
+
+.project:last-child {
+    border-right: none;
+}
+
+.project ul li {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.project ul li:last-child {
+    border-bottom: none;
+}
+
+.project ul li a {
+    display: block;
+    padding: var(--gap-md);
+}
+
+.project ul li a:hover {
+    background-color: var(--hover-bg-color);
+}
+
+.project h2 {
+    padding-left: var(--gap-md);
+}
+
+/* 7. WORK EXPERIENCE */
+.work-experience {
+    display: flex;
+    flex-direction: column;
+    padding-top: var(--gap-lg);
+    gap: var(--gap-md);
+    border-right: 1px solid var(--border-color);
+}
+
+.work-experience article {
+    display: flex;
+    flex-direction: column;
+    padding: var(--gap-md);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.work-experience article:last-child {
+    border-bottom: none;
+}
+
+.work-experience h2 {
+    padding-left: var(--gap-md);
+}
+
+.work-experience h3 {
+    margin-bottom: var(--gap-sm);
+}
+
+.work-experience a {
+    display: inline-block;
+    align-self: flex-start;
+    margin-top: var(--gap-xs);
+    color: var(--link-color);
+    font-weight: 600;
+}
+
+/* 8. EDUCATION */
+.education {
+    display: flex;
+    flex-direction: column;
+    padding: var(--gap-lg) var(--gap-md);
+}
+
+.education h2 {
+    margin-bottom: var(--gap-lg);
+}
+
+.education p {
+    margin-bottom: var(--gap-md);
+}
+
+/* 9. REVIEWS */
+.reviews {
+    display: flex;
+    flex-direction: column;
+    padding: var(--gap-xl) var(--gap-md);
+    gap: var(--gap-lg);
+    border-top: 1px solid var(--border-color);
+}
+
+.review-list {
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap-md);
+}
+
+.reviews blockquote {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border-color);
+    padding: var(--gap-md);
+    border-radius: 16px;
+}
+
+.reviews blockquote p {
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+.reviews blockquote footer {
+    margin-top: var(--gap-sm);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--muted-color);
+}
+
+/* 10. FOOTER */
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--gap-xl) var(--gap-md);
+}
+
+.footer-container p {
+    font-size: 1rem;
+    color: var(--muted-color);
+}
+
+/* 11. RESPONSIVE DESIGN */
+
+@media (max-width: 1024px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project,
+    .work-experience {
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: var(--gap-lg);
+    }
+
+    .review-list {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.25rem;
+        letter-spacing: -0.01em;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .hero {
+        padding: var(--gap-xl) var(--gap-md); /* De 144px para 88px */
+    }
+
+    nav.container {
+        flex-direction: column;
+        gap: var(--gap-md);
+        padding: var(--gap-md);
+    }
+
+    nav ul {
+        gap: var(--gap-sm);
+    }
+
+    .footer-container {
+        padding: var(--gap-lg) var(--gap-md);
+        text-align: center;
+    }
+}

@@ -5,16 +5,16 @@
 ## My Journey
 I am a Product Designer learning Front-end development. My goal is to combine design skills with technical knowledge to build better digital products.
 
-I created this repository to track my progress. Each folder is a challenge from [roadmap.sh](https://roadmap.sh/projects) where I move from theory to practice and solve real problems.
+I created this repository to track my progress. Each folder is a challenge from [roadmap.sh](https://roadmap.sh/frontend/projects) where I move from theory to practice and solve real problems.
 
 ## Progress
 | Project | Status | Link |
 | :--- | :--- | :--- |
-| Single-Page CV | ✅ Done | [View Code](./projects/single-page-cv) |
-| Basic HTML Website | ✅ Done | [View Code](./projects/basic-html-website) |
-| Personal Portfolio | ✅ Done | [View Code](./projects/personal-portfolio) |
-| Testimonial Cards | ✅ Done | [View Code](./projects/testimonial-cards) |
-| Changelog Component | ⏳ In Progress | - |
+| Single-Page CV | ✅ Done | [View Code](./projects/1.single-page-cv) |
+| Basic HTML Website | ✅ Done | [View Code](./projects/2.basic-html-website) |
+| Personal Portfolio | ✅ Done | [View Code](./projects/3.personal-portfolio) |
+| Testimonial Cards | ⏳ In Progress | - |
+| Changelog Component | ❌ To Do | - |
 | Datepicker UI | ❌ To Do | - |
 | Accessible Form UI | ❌ To Do | - |
 | Image Grid Layout | ❌ To Do | - |
