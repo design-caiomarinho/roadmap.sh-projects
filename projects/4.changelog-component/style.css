@@ -1,4 +1,4 @@
-/* --- 1. RESET & BASE --- */
+/* 1. RESET */
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +20,7 @@ body {
     font-family: var(--fontMono);
 }
 
-/* --- 2. DESIGN TOKENS --- */
+/* 2. DESIGN TOKENS */
 :root {
     --colorBgMain: #09090b;
     --colorBgSurface: #18181a;
@@ -54,7 +54,7 @@ body {
     --dotSize: 8px;
 }
 
-/* --- 3. TYPOGRAPHY --- */
+/* 3. TYPOGRAPHY */
 .textBold, .versionTag {
     font-size: var(--fontSizeBase);
     font-weight: var(--fontWeightBold);
@@ -75,7 +75,7 @@ body {
 .muted { color: var(--colorContentMuted); }
 .soft { color: var(--colorContentSoft); }
 
-/* --- 4. TERMINAL LAYOUT --- */
+/* 4. TERMINAL LAYOUT */
 .terminalContainer {
     display: flex;
     flex-direction: column;
@@ -100,7 +100,7 @@ body {
     gap: var(--gapSm);
 }
 
-/* --- 5. LOG CONTENT AREA --- */
+/* 5. LOG CONTENT AREA */
 .logContainer {
     display: flex;
     flex-direction: column;
@@ -114,7 +114,7 @@ body {
     gap: var(--gapLg);
 }
 
-/* --- 6. COMMIT ITEM & INTERACTION --- */
+/* 6. COMMIT ITEM */
 .commit {
     display: flex;
     flex-direction: column;
@@ -128,7 +128,7 @@ body {
     width: 100%;
 }
 
-/* Interaction via summary */
+
 summary {
     list-style: none;
     outline: none;
@@ -145,11 +145,11 @@ summary::-webkit-details-marker { display: none; }
 .versionTagContainer { gap: var(--gapMd); }
 .dateContainer, .commitChange { gap: var(--gapSm); }
 
-/* Chevron state rotation */
+
 .chevronIcon { transition: transform 0.2s ease-in-out; }
 details:not([open]) .chevronIcon, .chevronIcon.static { transform: rotate(-90deg); }
 
-/* --- 7. COMMIT DETAILS & CHANGES --- */
+/* 7. COMMIT DETAILS */
 .commitDetails {
     padding-left: 4px;
     margin-top: var(--gapSm);
@@ -169,7 +169,7 @@ details:not([open]) .chevronIcon, .chevronIcon.static { transform: rotate(-90deg
     gap: var(--gapSm);
 }
 
-/* --- 8. CARET ANIMATION --- */
+/* 8. CARET ANIMATION */
 .caret {
     width: 4px;
     height: 1em;
@@ -181,7 +181,7 @@ details:not([open]) .chevronIcon, .chevronIcon.static { transform: rotate(-90deg
     50% { opacity: 0; }
 }
 
-/* --- 9. STATUS & TAGS --- */
+/* 9. STATUS */
 .versionDotColor {
     width: var(--dotSize);
     height: var(--dotSize);
