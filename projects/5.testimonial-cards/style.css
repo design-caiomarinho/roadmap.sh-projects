@@ -1,0 +1,364 @@
+/* --- TOKENS DE DESIGN --- */
+:root {
+  /* Colors */
+  --brand-base: #0084d1;
+  --brand-light: #ccefff;
+  --content-base: #071e16;
+  --content-muted: #404040;
+  --content-light: #667085;
+  --content-main: #071e16;
+  --content-brand: #0084d1;
+  --content-success: #00c950;
+  --bg-page: #f5f5f5;
+  --surface-base: #e6e6e6;
+  --surface-light: #ffffff;
+  --border-base: #cccccc;
+  --border-brand: #0084d1;
+
+  --font-family: "Inter", sans-serif;
+
+  --radius-full: 9999px;
+  --radius-lg: 16px;
+}
+
+/* Typography */
+h1 {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -0.06em;
+  color: var(--content-base);
+}
+
+.bodyLg {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.06em;
+  color: var(--content-base);
+}
+
+.bodyMd {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.06em;
+  color: var(--content-light);
+}
+
+.labelButton {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -0.06em;
+  color: var(--content-muted);
+}
+
+.textHat {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  color: var(--content-brand);
+}
+
+/* Colors */
+.icon-brand {
+  color: var(--content-brand);
+}
+
+.icon-base {
+  color: var(--content-base);
+}
+
+.icon-muted {
+  color: var(--content-muted);
+}
+
+.icon-light {
+  color: var(--content-light);
+}
+
+.icon-success {
+  color: var(--content-success);
+}
+
+/* --- RESET --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: var(--font-family);
+  background-color: var(--bg-page);
+  color: var(--content-main);
+}
+
+.container {
+  width: 100%;
+  max-width: 1520px;
+  padding: 144px 192px;
+}
+
+/* --- HEADER SECTION --- */
+.headerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 64px;
+}
+
+.subheaderSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 614px;
+  gap: 16px;
+}
+
+.subheaderSection .bodyMd {
+  max-width: 515px;
+}
+
+.subtitleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  border: 1px solid var(--border-brand);
+  border-radius: var(--radius-full);
+}
+
+/* --- BUTTONS --- */
+.buttonsContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.buttonSecondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  background-color: transparent;
+  border: 1px solid var(--border-base);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.buttonSecondary.active {
+  background-color: var(--brand-light);
+  border: 1px solid var(--brand-base);
+}
+
+.buttonSecondary.active .labelButton {
+  color: var(--content-brand);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--brand-base);
+  border-radius: 999px;
+}
+
+/* --- LAYOUT DE DEPOIMENTOS --- */
+.testimonialsContainer {
+  display: grid;
+  grid-template-columns: 1fr 345px;
+  align-items: stretch;
+  gap: 16px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 80px auto 0 auto;
+  padding: 32px;
+  background-color: var(--surface-base);
+  border-radius: 16px;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.testimonialCard {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 32px;
+  padding: 40px;
+  background-color: var(--surface-light);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.testimonialTextContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 24px;
+}
+
+/* --- AUTHOR INFO --- */
+.AuthorContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.AuthorContainer img {
+  display: block;
+  width: 48px;
+  height: 48px;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+}
+
+.authorInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.authorInfo .bodyMd:first-child {
+  font-weight: 600;
+  line-height: 100%;
+  color: var(--content-muted);
+}
+
+.authorInfo .bodyMd:last-child {
+  line-height: 100%;
+  color: var(--content-light);
+}
+
+/* --- STATISTICS CONTAINER --- */
+.statisticsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  padding: 40px;
+  background-color: var(--surface-light);
+  border-radius: 16px;
+}
+
+.statisticItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.statisticItem:first-child {
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--surface-base);
+}
+
+.statsBlock {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* --- MEDIA QUERIES --- */
+@media (max-width: 1180px) {
+  .container {
+    padding: 80px 40px;
+  }
+
+  .buttonsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    max-width: 800px;
+    gap: 12px;
+  }
+
+  .buttonSecondary {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 64px 24px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  .bodyLg {
+    font-size: 18px;
+  }
+
+  .testimonialsContainer {
+    grid-template-columns: 1fr;
+    padding: 16px;
+    gap: 24px;
+  }
+
+  .buttonsContainer {
+    gap: 8px;
+  }
+
+  .subheaderSection {
+    gap: 12px;
+  }
+
+@media (max-width: 480px) {
+  .container {
+    padding: 48px 24px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .bodyLg {
+    font-size: 16px;
+  }
+
+  .bodyMd {
+    font-size: 14px;
+  }
+
+  .textHat {
+    font-size: 12px;
+  }
+
+  .buttonsContainer {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .testimonialsContainer {
+    padding: 16px;
+  }
+
+  .testimonialCard {
+    padding: 24px;
+  }
+}
+}

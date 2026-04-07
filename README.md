@@ -14,8 +14,8 @@ I created this repository to track my progress. Each folder is a challenge from 
 | Basic HTML Website | ✅ Done | [View Code](./projects/2.basic-html-website) |
 | Personal Portfolio | ✅ Done | [View Code](./projects/3.personal-portfolio) |
 | Changelog Component | ✅ Done | [View Code](./projects/4.changelog-component) |
-| Testimonial Cards | ⏳ In Progress | - |
-| Datepicker UI | ❌ To Do | - |
+| Testimonial Cards | ✅ Done | [View Code](./projects/5.testimonial-cards/) |
+| Datepicker UI | ⏳ In Progress | - |
 | Accessible Form UI | ❌ To Do | - |
 | Image Grid Layout | ❌ To Do | - |
 | Tooltip UI | ❌ To Do | - |
