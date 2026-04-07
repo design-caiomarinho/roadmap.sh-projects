@@ -13,8 +13,8 @@ I created this repository to track my progress. Each folder is a challenge from 
 | Single-Page CV | ✅ Done | [View Code](./projects/1.single-page-cv) |
 | Basic HTML Website | ✅ Done | [View Code](./projects/2.basic-html-website) |
 | Personal Portfolio | ✅ Done | [View Code](./projects/3.personal-portfolio) |
+| Changelog Component | ✅ Done | [View Code](./projects/4.changelog-component) |
 | Testimonial Cards | ⏳ In Progress | - |
-| Changelog Component | ❌ To Do | - |
 | Datepicker UI | ❌ To Do | - |
 | Accessible Form UI | ❌ To Do | - |
 | Image Grid Layout | ❌ To Do | - |

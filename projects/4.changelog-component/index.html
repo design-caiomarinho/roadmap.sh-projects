@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Changelog</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" />
+    </head>
+    <body>
+        <section class="terminalContainer">
+            <div class="header">
+                <div class="sidebarHeader">
+                    <svg class="mutedIcon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.16667 14.1667L5 10L9.16667 5.83334" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M14.9997 14.1667L10.833 10L14.9997 5.83334" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <p class="textHeader">changelog.log</p>
+                </div>
+                <p class="textHeader">~/project</p>
+            </div>
+
+            <div class="logContainer">
+                <div class="commandHeader">
+                    <svg class="accentIcon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 1.66667V18.3333" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M14.1667 4.16667H7.91667C7.14312 4.16667 6.40125 4.47396 5.85427 5.02094C5.30729 5.56792 5 6.30979 5 7.08334C5 7.85689 5.30729 8.59875 5.85427 9.14573C6.40125 9.69271 7.14312 10 7.91667 10H12.0833C12.8569 10 13.5987 10.3073 14.1457 10.8543C14.6927 11.4013 15 12.1431 15 12.9167C15 13.6902 14.6927 14.4321 14.1457 14.9791C13.5987 15.526 12.8569 15.8333 12.0833 15.8333H5" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <p class="textBold main">git log --all --oneline</p>
+                </div>
+
+                <div class="commitsContainer">
+                    <details class="commit" open>
+                        <summary class="commitHeader">
+                            <div class="commitInfo">
+                                <div class="versionTagContainer">
+                                    <div class="versionDotColor statusError"></div>
+                                    <div class="versionTag">v3.0.0</div>
+                                    <div class="textBold muted">a3f7c2d</div>
+                                </div>
+                                <p class="textBold main">Aurora Release</p>
+                            </div>
+                            <div class="dateContainer">
+                                <p class="textRegular muted">06-04-2026</p>
+                                <svg class="mutedIcon chevronIcon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </summary>
+                        <div class="commitDetails">
+                            <div class="commitDescriptionContainer">
+                                <p class="textRegular muted"># Uma reimaginação completa da plataforma com foco em performance e experiência do desenvolvedor.</p>
+                                <div class="commitChangesContainer">
+                                    <div class="commitChange">
+                                        <svg class="statusDefault" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 11C8.76142 11 11 8.76142 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" /><path d="M4.5 6L5.5 7L7.5 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                                        <p class="textRegular soft">Novo Motor de Renderização</p>
+                                    </div>
+                                    <div class="commitChange">
+                                        <svg class="statusDefault" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 11C8.76142 11 11 8.76142 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" /><path d="M4.5 6L5.5 7L7.5 5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                                        <p class="textRegular soft">AI Code Assistant</p>
+                                    </div>
+                                    <div class="commitChange">
+                                        <svg class="statusWarning" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 11C8.76142 11 11 8.76142 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" /><path d="M6 8V6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" /><path d="M6 4H6.005" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                                        <p class="textRegular soft">API v3</p>
+                                    </div>
+                                    <div class="commitChange">
+                                        <svg class="statusSuccess" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 11C8.76142 11 11 8.76142 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" /><path d="M4.5 7.5L7.5 4.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                                        <p class="textRegular soft">Performance 10x</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+
+                    <div class="commit">
+                        <div class="commitHeader">
+                            <div class="commitInfo">
+                                <div class="versionTagContainer">
+                                    <div class="versionDotColor statusSuccess"></div>
+                                    <div class="versionTag">v2.8.0</div>
+                                    <div class="textBold muted">b8e4f1a</div>
+                                </div>
+                                <p class="textBold main">Velocity Update</p>
+                            </div>
+                            <div class="dateContainer">
+                                <p class="textRegular muted">01-04-2026</p>
+                                <svg class="mutedIcon chevronIcon static" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="commit">
+                        <div class="commitHeader">
+                            <div class="commitInfo">
+                                <div class="versionTagContainer">
+                                    <div class="versionDotColor statusWarning"></div>
+                                    <div class="versionTag">v2.7.2</div>
+                                    <div class="textBold muted">c2d9e3b</div>
+                                </div>
+                                <p class="textBold main">Security Patch</p>
+                            </div>
+                            <div class="dateContainer">
+                                <p class="textRegular muted">25-03-2026</p>
+                                <svg class="mutedIcon chevronIcon static" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="commit">
+                        <div class="commitHeader">
+                            <div class="commitInfo">
+                                <div class="versionTagContainer">
+                                    <div class="versionDotColor statusSuccess"></div>
+                                    <div class="versionTag">v2.7.0</div>
+                                    <div class="textBold muted">d4f6a2c</div>
+                                </div>
+                                <p class="textBold main">Developer Experience</p>
+                            </div>
+                            <div class="dateContainer">
+                                <p class="textRegular muted">13-03-2026</p>
+                                <svg class="mutedIcon chevronIcon static" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <svg class="accentIcon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 1.66667V18.3333" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M14.1667 4.16667H7.91667C7.14312 4.16667 6.40125 4.47396 5.85427 5.02094C5.30729 5.56792 5 6.30979 5 7.08334C5 7.85689 5.30729 8.59875 5.85427 9.14573C6.40125 9.69271 7.14312 10 7.91667 10H12.0833C12.8569 10 13.5987 10.3073 14.1457 10.8543C14.6927 11.4013 15 12.1431 15 12.9167C15 13.6902 14.6927 14.4321 14.1457 14.9791C13.5987 15.526 12.8569 15.8333 12.0833 15.8333H5" stroke="currentColor" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <div class="caret"></div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,206 @@
+/* --- 1. RESET & BASE --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: var(--colorBgMain);
+    color: var(--colorContentMain);
+    font-family: var(--fontMono);
+}
+
+/* --- 2. DESIGN TOKENS --- */
+:root {
+    --colorBgMain: #09090b;
+    --colorBgSurface: #18181a;
+    --colorBgTag: #162a25;
+    --colorBorder: #2f2f31;
+
+    --colorContentMain: #ffffff;
+    --colorContentMuted: #8B8B8C;
+    --colorContentSoft: #E8E8E8;
+    --colorContentGreen: #01ca8b;
+    --colorContentRed: #ff6467;
+    --colorContentYellow: #fdc700;
+    --colorContentBlue: #50a2ff;
+    --colorCaret: #8B8B8C;
+
+    --fontMono: 'JetBrains Mono', monospace;
+    --fontSizeBase: 14px;
+    --fontWeightRegular: 400;
+    --fontWeightBold: 700;
+
+    --gapSm: 8px;
+    --gapMd: 16px;
+    --gapLg: 24px;
+    --gapXl: 32px;
+    --gapXxl: 40px;
+
+    --paddingMd: 16px;
+    --paddingLg: 24px;
+    --paddingXl: 32px;
+    
+    --dotSize: 8px;
+}
+
+/* --- 3. TYPOGRAPHY --- */
+.textBold, .versionTag {
+    font-size: var(--fontSizeBase);
+    font-weight: var(--fontWeightBold);
+}
+
+.textRegular {
+    font-size: var(--fontSizeBase);
+    font-weight: var(--fontWeightRegular);
+}
+
+.textHeader {
+    font-size: var(--fontSizeBase);
+    font-weight: var(--fontWeightBold);
+    color: var(--colorContentMuted);
+}
+
+.main { color: var(--colorContentMain); }
+.muted { color: var(--colorContentMuted); }
+.soft { color: var(--colorContentSoft); }
+
+/* --- 4. TERMINAL LAYOUT --- */
+.terminalContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 982px;
+    background-color: var(--colorBgSurface);
+    border: 1px solid var(--colorBorder);
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--paddingMd);
+    border-bottom: 1px solid var(--colorBorder);
+}
+
+.sidebarHeader, .commandHeader, .footer {
+    display: flex;
+    align-items: center;
+    gap: var(--gapSm);
+}
+
+/* --- 5. LOG CONTENT AREA --- */
+.logContainer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gapLg);
+    padding: var(--paddingXl) var(--gapLg);
+}
+
+.commitsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gapLg);
+}
+
+/* --- 6. COMMIT ITEM & INTERACTION --- */
+.commit {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gapSm);
+}
+
+.commitHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Interaction via summary */
+summary {
+    list-style: none;
+    outline: none;
+    cursor: pointer;
+}
+summary::-webkit-details-marker { display: none; }
+
+.commitInfo, .versionTagContainer, .dateContainer, .commitChange {
+    display: flex;
+    align-items: center;
+}
+
+.commitInfo { gap: var(--gapLg); }
+.versionTagContainer { gap: var(--gapMd); }
+.dateContainer, .commitChange { gap: var(--gapSm); }
+
+/* Chevron state rotation */
+.chevronIcon { transition: transform 0.2s ease-in-out; }
+details:not([open]) .chevronIcon, .chevronIcon.static { transform: rotate(-90deg); }
+
+/* --- 7. COMMIT DETAILS & CHANGES --- */
+.commitDetails {
+    padding-left: 4px;
+    margin-top: var(--gapSm);
+}
+
+.commitDescriptionContainer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gapMd);
+    padding-left: var(--gapMd);
+    border-left: 1px solid var(--colorBorder);
+}
+
+.commitChangesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gapSm);
+}
+
+/* --- 8. CARET ANIMATION --- */
+.caret {
+    width: 4px;
+    height: 1em;
+    background-color: var(--colorCaret);
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* --- 9. STATUS & TAGS --- */
+.versionDotColor {
+    width: var(--dotSize);
+    height: var(--dotSize);
+    background-color: currentColor;
+    flex-shrink: 0;
+}
+
+.versionTag {
+    padding: 4px 8px;
+    background-color: var(--colorBgTag);
+    color: var(--colorContentGreen);
+}
+
+.softIcon { color: var(--colorContentSoft); }
+.accentIcon { color: var(--colorContentGreen); }
+.mutedIcon { color: var(--colorContentMuted); }
+
+/* Semantic Status Colors */
+.statusDefault { color: var(--colorContentGreen); }
+.statusError { color: var(--colorContentRed); }
+.statusWarning { color: var(--colorContentYellow); }
+.statusSuccess { color: var(--colorContentBlue); }
