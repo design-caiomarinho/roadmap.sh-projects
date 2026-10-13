@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <title>Testimonial Card | HTML and CSS</title>
+</head>
+<body>
+    <main>
+        <section class="testimonial">
+            <div class="title">
+                <div class="overline-container">
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <rect y="6" width="8.48528" height="8.48528" transform="rotate(-45 0 6)" fill="currentColor"/>
+                    </svg>
+                    <p class="overline">Testimonios</p>
+                </div>
+                <h1 class="headline-large">Lo que dicen nuestros clientes</h1>
+            </div>
+            <article class="testimonial-card">
+                <img src="img/woman-portrait.jpg" alt="Valetina Rojas" class="testimonial-picture">
+
+                <div class="testimonial-info">
+                    <div class="testimonial-header">
+                        <p class="testimonial-counter">(01 / 03)</p>
+                        <h2 class="headline-medium">Valentina Rojas</h2>
+                        <p class="body-medium">Directora de Marketing, Brisa</p>
+                    </div>
+
+                    <div class="testimonial-footer">
+                        <dl class="testimonial-services">
+                            <dt class="body-small">Servicios</dt>
+                            <dd class="body-medium">Dirección de arte, diseño digital y web</dd>
+                        </dl>
+
+                        <div class="testimonial-nav">
+                            <button type="button" class="nav-button" aria-label="Testimonio anterior">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M7 3L2 8L7 13M2 8L14 8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <button type="button" class="nav-button" aria-label="Siguiente testimonio">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M9 13L14 8L9 3M14 8H2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-quote">
+                    <svg class="quote-icon" width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M32 0C31.3233 2.45908 30.6465 5.12575 29.9698 8C29.3253 10.8423 28.7291 13.6527 28.1813 16.4311C27.6334 19.2096 27.1984 21.7325 26.8761 24H18.3202L17.5952 22.9461C18.1752 20.6148 18.9164 18.1238 19.8187 15.4731C20.7533 12.8224 21.7523 10.1717 22.8157 7.52096C23.9114 4.83832 25.007 2.33134 26.1027 0H32ZM14.2115 0C13.5347 2.45908 12.858 5.12575 12.1813 8C11.5368 10.8423 10.9406 13.6527 10.3927 16.4311C9.84491 19.2096 9.40987 21.7325 9.08761 24H0.58006L0 22.9461C0.58006 20.6148 1.30514 18.1238 2.17523 15.4731C3.07754 12.8224 4.06042 10.1717 5.12387 7.52096C6.18731 4.83832 7.26687 2.33134 8.36254 0H14.2115Z" fill="currentColor"/>
+                    </svg>
+                    <p class="quote-large">Nos guiaron en cada decisión con claridad. Un proyecto enorme se volvió un proceso simple y el resultado nos representa.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <label class="theme-toggle">
+        <input type="checkbox" class="theme-toggle-input" aria-label="Modo oscuro">
+        <span class="theme-toggle-option theme-toggle-to-dark" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.5 9.5A5.5 5.5 0 0 1 6.5 2.5a5.5 5.5 0 1 0 7 7Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Modo oscuro
+        </span>
+        <span class="theme-toggle-option theme-toggle-to-light" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.2"/>
+                <path d="M8 1.5V3M8 13v1.5M1.5 8H3M13 8h1.5M3.4 3.4l1.06 1.06M11.54 11.54l1.06 1.06M3.4 12.6l1.06-1.06M11.54 4.46l1.06-1.06" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+            </svg>
+            Modo claro
+        </span>
+    </label>
+</body>
+</html>

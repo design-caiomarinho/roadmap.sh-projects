@@ -13,6 +13,7 @@ Projetos de exercício do [roadmap.sh](https://roadmap.sh/projects/frontend). So
 | Projects | Stack | Action |
 |---|---|---|
 | Changelog Component | HTML, CSS | [View project](projects/changelog-component) |
+| Testimonial Card | HTML, CSS | [View project](projects/testimonial-card) |
 | Coming soon | ... | ... |
 
 ## Estructura / Estrutura
@@ -23,7 +24,12 @@ Cada projeto tem a própria pasta em `projects/`. Para ver um, abra o `index.htm
 
 ```
 projects/
-└── changelog-component/
+├── changelog-component/
+│   ├── index.html
+│   ├── style.css
+│   ├── img/
+│   └── README.md
+└── testimonial-card/
     ├── index.html
     ├── style.css
     ├── img/
